@@ -8,13 +8,14 @@ gem 'rails', '4.1.7'
 
 #database for activerecord in dev
 group :development do
-	gem 'sqlite3'
+	#gem 'sqlite3'
+	# gem 'mysql2'
+	# gem 'pg'
 end
 
 #database for activerecord in production
-group :production do
-	gem 'pg'
-end
+#now using postgres for both
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
